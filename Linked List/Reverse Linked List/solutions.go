@@ -2,7 +2,7 @@
  * @Author: qufeng107 qufeng107@gmail.com
  * @Date: 2024-08-11 17:05:35
  * @LastEditors: qufeng107 qufeng107@gmail.com
- * @LastEditTime: 2024-08-11 21:07:51
+ * @LastEditTime: 2024-08-12 22:15:10
  * @FilePath: /Algorithms/Linked List/Reverse Linked List/solutions.go
  * @Description:
  *
@@ -16,17 +16,6 @@
  *     Next *ListNode
  * }
  */
-
-// recursion
-func reverseBookList1(head *ListNode) []int {
-
-	if head == nil {
-		return []int{}
-	}
-
-	return append(reverseBookList(head.Next), head.Val)
-
-}
 
 // traverse linked list to get length, traverse linked list again to get value
 func reverseBookList2(head *ListNode) []int {
@@ -45,5 +34,16 @@ func reverseBookList2(head *ListNode) []int {
 	}
 
 	return reverse_list
+
+}
+
+// recursion
+func reverseBookList1(head *ListNode) []int {
+
+	if head == nil {
+		return []int{}
+	}
+
+	return append(reverseBookList(head.Next), head.Val)
 
 }
