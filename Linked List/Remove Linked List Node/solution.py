@@ -17,7 +17,7 @@ class ListNode:
 
 
 
-class Solution:
+class Solution1:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
         # remove head
@@ -27,7 +27,6 @@ class Solution:
         # check head
         if head is None:
             return None
-
 
         pointer = head
 
